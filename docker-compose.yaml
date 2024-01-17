@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    # Build the image using the Dockerfile in the current directory
+    build: .
+    # Expose port 80 to the host
+    ports:
+      - "80:80"
