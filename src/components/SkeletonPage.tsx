@@ -4,7 +4,7 @@ import Submenu from "./Submenu";
 import { Outlet } from 'react-router-dom';
 
 const SkeletonPage: React.FC<{type:number}>=({type})=>{
-    return(<><div className='fixed' >
+    return(<><div className='fixed bg-customGrey' >
       
     <Navbar />
  

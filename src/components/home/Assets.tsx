@@ -20,113 +20,38 @@ const Assets:React.FC = () => {
         <Table.Body >
           <Table.Row>
             <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
+            <Table.Cell>12LTR08</Table.Cell>
             <Table.Cell>Laptop</Table.Cell>
             <Table.Cell>Nikil</Table.Cell>
             <Table.Cell>1</Table.Cell>
             <Table.Cell>09:12:23</Table.Cell>
           </Table.Row>   <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
+            <Table.RowHeaderCell>Kiana</Table.RowHeaderCell>
+            <Table.Cell>12MTR09</Table.Cell>
+            <Table.Cell>Monitor</Table.Cell>
+            <Table.Cell>Suresh</Table.Cell>
             <Table.Cell>1</Table.Cell>
             <Table.Cell>09:12:23</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
+            <Table.RowHeaderCell>Nick</Table.RowHeaderCell>
+            <Table.Cell>19MTR08</Table.Cell>
+            <Table.Cell>Monitor</Table.Cell>
+            <Table.Cell>Karthik</Table.Cell>
             <Table.Cell>1</Table.Cell>
             <Table.Cell>09:12:23</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
+            <Table.RowHeaderCell>Elena</Table.RowHeaderCell>
+            <Table.Cell>21SDR01</Table.Cell>
+            <Table.Cell>SSD</Table.Cell>
             <Table.Cell>Nikil</Table.Cell>
             <Table.Cell>1</Table.Cell>
             <Table.Cell>09:12:23</Table.Cell>
           </Table.Row>
-          <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>09:12:23</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>09:12:23</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>09:12:23</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>09:12:23</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>09:12:23</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>09:12:23</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>09:12:23</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>09:12:23</Table.Cell>
-          </Table.Row>   <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Nikil</Table.Cell>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>09:12:23</Table.Cell>
-          </Table.Row>   <Table.Row>
-            <Table.RowHeaderCell>Liza</Table.RowHeaderCell>
-            <Table.Cell>123456</Table.Cell>
-            <Table.Cell>Laptop</Table.Cell>
-            <Table.Cell>Ash</Table.Cell>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>09:12:23</Table.Cell>
-          </Table.Row>
+    
+          
+         
 
        
         </Table.Body>
