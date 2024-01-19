@@ -16,6 +16,8 @@ import Goal from     './components/home/Goal.tsx'
 import Calendar from './components/LeaveTracker/Calendar.js'
 import EmployeeSpecific from './components/LeaveTracker/EmployeeSpecific.tsx'
 import Issues from './components/LeaveTracker/Issues.tsx'
+import Dashboard from './components/finance/Dashboard.tsx'
+import Issue from './components/finance/Issues.tsx'
 // import Root from './routes/root';
 // import { Skeleton } from '@radix-ui/themes'
 const router = createBrowserRouter([
@@ -33,6 +35,11 @@ const router = createBrowserRouter([
     path:"leave",
     element:<SkeletonPage type={2}/>,
     children:[{index:true,element:<Navigate to ={'calendar'}/>},{path:'calendar',element:<Calendar/>},{path:"employee-specific",element:<EmployeeSpecific/>},{path:"issues",element:<Issues/>}]
+  },
+  {
+    path:"finance",
+    element:<SkeletonPage type={3}/>,
+    children:[{index:true,element:<Navigate to = {"dashboard"}/>},{path:"dashboard",element:<Dashboard/>},{path:"issues",element:<Issue/>}]
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(

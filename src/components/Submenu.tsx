@@ -21,6 +21,10 @@ const typeConfig: TypeConfig = {
         { title: "EmployeeSpecific", href: "employee-specific" },
         { title: "Issues", href: "issues" },
     ],
+    3:[
+        {title:"Dashboard",href:"dashboard"},
+        {title:"Issues",href:"issues"}
+    ]
  
 };
 
