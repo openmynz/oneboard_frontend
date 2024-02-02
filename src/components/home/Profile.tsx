@@ -6,8 +6,8 @@ import CarouselCard from "../../uicomponents/Carousel";
 const Profile: React.FC = () => {
   return (
     <div className="mt-1 flex flex-col bg-customGrey md:flex-row">
-      <div className="w-full md:w-3/5">
-        <div className="ml-10 overflow-y-scroll bg-white mt-1 flex-col space-y-1 p-1" style={{ height: "20rem" }}>
+      <div className="w-full md:w-3/5 lg:w-3/5">
+        <div className="ml-10 overflow-y-scroll bg-white mt-1 flex-col space-y-1 p-1" style={{ height: "calc(100vh - 400px)" }}>
           <div className="border border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 h-auto">
             <div className="flex justify-between">
               <div className="text-black font-bold text-xl mb-6">LinkedIn updates</div>
@@ -80,12 +80,12 @@ const Profile: React.FC = () => {
         </div>
       </div>
 
-      <div>
+      <div className="lg:w-auto md:w-2/5 ">
         <div className="mt-6 ml-32">
           <img src={ProfieImg} alt="Profile" className="rounded-full h-40 w-40" />
         </div>
         <Theme appearance="light">
-          <div className="border-customGrey font-medium text-sm bg-white rounded-md overflow-hidden ml-8 mt-3" style={{ height: "400px" }}>
+          <div className="border-customGrey font-medium text-sm bg-white rounded-md overflow-hidden ml-8 mt-3" style={{ height: "calc(100vh - 20rem)" }}>
             <p className="bg-customBlue text-white text-center p-3 mb-3">General Profile</p>
             <table className="table-auto border-separate border-spacing-2 p-2 ml-6">
               <tbody>

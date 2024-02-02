@@ -98,13 +98,4 @@
   );
 };
 export default Dashboard;
-{
-  /* <div className="bg-white w-64 mt-10 ml-6 rounded">
-<h3>Financial Helpdesk</h3>
-<h4>Contact</h4>
-<table>
-    <tr></tr>
-</table>
-    </div>
-    </div></>) */
-}
+

@@ -39,4 +39,3 @@ const Sidebar: React.FC = () => {
   );
 };
 export default Sidebar;
-// "this navlink is again not highlighting in customOrange when i click something inside how to make it active always if it's in in the same page"
