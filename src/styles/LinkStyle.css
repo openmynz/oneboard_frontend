@@ -1,0 +1,33 @@
+
+ #navlink a {
+  display: block; 
+  text-decoration: none; 
+  width: 110px;
+}
+
+#navlink a.active {
+  background-color: #2f97f8f6;
+  color: rgb(29, 27, 27);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  
+}
+
+ #submenu a{
+  display: block; 
+  text-decoration: none;
+  
+
+ 
+ 
+ }
+ #submenu a.active{
+  background-color: #edededa2;
+  color: black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+ }

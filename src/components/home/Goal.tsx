@@ -1,15 +1,11 @@
 
-
-
-const Goal = () => (
+const Goal = () => (<>
  
- <div>Goal</div>
+Performance Management System
+</>
 );
 
 export default Goal;
-// const Goal:React.FC =() =>{
-//     return(<>Goals</>)
-// }
-// export default Goal;
+
 
 

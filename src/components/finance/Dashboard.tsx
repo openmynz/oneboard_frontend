@@ -1,29 +1,30 @@
-const Dashboard: React.FC = () => {
+
+ const Dashboard: React.FC = () => {
   return (
     <>
-      <div className="">
-        <div className="overflow-hidden">
-          <div
-            className="   border-customGrey font-medium text-sm  bg-white rounded-md overflow-hidden  ml-8"
-            style={{ marginTop: "50px",width:"568px",overflow: "hidden" }} 
+      <div className="flex">
+        <div className="overflow-hidden ">
+          <div className="mt-10 rounded-md"
+   
           >
-            <p className="bg-customBlue text-white text-center p-3 ">
-              Financial HelpDesk
-            </p>
+          
 
-            <table className=" table-auto">
+            <table className=" table-auto  font-medium text-sm  bg-white  overflow-hidden  ml-8 w-96">
+            <caption className="bg-customBlue text-white text-center p-3 ">
+              Financial HelpDesk
+            </caption>
               <tr className="font-bold">
-                <td className="border border-slate-300 p-4 rounded-md">Name</td>
-                <td className="border border-slate-300 p-4 rounded-md">Role</td>
-                <td className="border border-slate-300 p-4 rounded-md">Contact</td>
-                <td className="border border-slate-300 p-4 rounded-md">MailId</td>
+                <td className=" p-4 rounded-md">Name</td>
+                <td className="  p-4 rounded-md">Role</td>
+                <td className="  p-4 rounded-md">Contact</td>
+                <td className="  p-4 rounded-md">MailId</td>
               </tr>
-              <tr></tr>
+             
               <tr>
-                <td className="border border-slate-300 p-3 rounded-md">Sundeep Agarwal</td>
-                <td className="border border-slate-300 p-3 rounded-md">CFO</td>
-                <td className="border border-slate-300 p-3 rounded-md">+916366548886</td>
-                <td className="border border-slate-300 p-3 rounded-md">
+                <td className="  p-3 rounded-md">Sundeep Agarwal</td>
+                <td className=" p-3 rounded-md">CFO</td>
+                <td className="  p-3 rounded-md">+916366548886</td>
+                <td className=" p-3 rounded-md">
                   <a
                     className="text-customBlue"
                     href="mailto:sundeep.agarwal@openmynz.com"
@@ -34,10 +35,64 @@ const Dashboard: React.FC = () => {
               </tr>
             </table>
           </div>
-          <div>
-      
+          <div className="mt-10">
+          <table className=" table-auto   font-medium text-sm  bg-white  overflow-hidden  ml-8 w-96 tex">
+            <caption className="bg-customBlue text-white text-center p-3 ">
+              Important Links
+            </caption>
+             
+            
+             <tr>
+              <td className=" p-4 rounded-md">
+                No
+              </td>
+              <td className=" p-4 rounded-md">Description</td>
+              <td className=" p-4 rounded-md">Link</td>
+             </tr>
+             <tr>
+              <td className=" p-4 rounded-md">
+                1
+              </td>
+              <td className=" p-4 rounded-md">Payroll Link</td>
+              <td className=" p-4 rounded-md"> <a href="https://payroll.zoho.in/"
+                    className="text-customBlue">
+                   Click here
+                  </a></td>
+             </tr>
+             <tr>
+              <td className="p-4 rounded-md">
+                2
+              </td>
+              <td className=" p-4 rounded-md">Leave Tracker 2024</td>
+              <td className=" p-4 rounded-md"> <a href="https://openmynz.sharepoint.com/:x:/s/CommonRepository/EXzUB2wgpllMmxlAL21iUQoBjXU9KYDEPZy9B-kwdT_yRQ?e=hyEkfY"
+                    className="text-customBlue"
+                  
+                  >
+           Click Here
+                  </a></td>
+             </tr>
+            </table>
           </div>
         </div>
+       
+  <div>
+  <div className="mt-10">
+          <table className=" table-auto  font-medium text-sm  bg-white  overflow-hidden  ml-8 w-96 tex">
+            <caption className="bg-customBlue text-white text-center p-3 ">
+              Financial Updates
+            </caption>
+             
+            
+             <tr>
+              <td className=" p-4 rounded-md">We have signed up with HDFC bank for the Salary Accounts as they have offered some benefits for our employees so do check the email.</td>
+             
+             </tr>
+            
+          
+            </table>
+          </div>
+  </div>
+        
       </div>
     </>
   );

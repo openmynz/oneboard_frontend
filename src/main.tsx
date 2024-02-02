@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.tsx'
+// import App from './App.tsx',
 import SkeletonPage from './components/SkeletonPage.tsx'
 import Login from './components/Login.tsx'
 import './index.css'
 import '@radix-ui/themes/styles.css';
+
 import {
   createBrowserRouter,
   Navigate,
@@ -18,6 +19,8 @@ import EmployeeSpecific from './components/LeaveTracker/EmployeeSpecific.tsx'
 import Issues from './components/LeaveTracker/Issues.tsx'
 import Dashboard from './components/finance/Dashboard.tsx'
 import Issue from './components/finance/Issues.tsx'
+import LeaveTracker from './components/finance/LeaveTracker.tsx'
+
 // import Root from './routes/root';
 // import { Skeleton } from '@radix-ui/themes'
 const router = createBrowserRouter([
@@ -40,6 +43,11 @@ const router = createBrowserRouter([
     path:"finance",
     element:<SkeletonPage type={3}/>,
     children:[{index:true,element:<Navigate to = {"dashboard"}/>},{path:"dashboard",element:<Dashboard/>},{path:"issues",element:<Issue/>}]
+  },
+  {
+    path:"hr",
+    element:<SkeletonPage type={4}/>,
+    children:[{index:true,element:<Navigate to = {"leave-tracker"}/>},{path:"leave-tracker",element:<LeaveTracker/>}]
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(

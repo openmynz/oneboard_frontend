@@ -10,7 +10,7 @@ interface IconProps {
 export const icons = {
   notification: (props: IconProps) => (
     <svg
-      // className={className}
+      // classNameName={classNameName}
       width="23"
       height="23"
       viewBox="0 0 15 15"
