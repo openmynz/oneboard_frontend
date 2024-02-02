@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import Logo from "../images/Omz_logo.png";
-import "../styles/LinkStyle.css"
+import Logo from "@/images/omz_logo.png";
+import "@/styles/LinkStyle.css"
 interface LinkProps {
   title: string;
   href: string;
