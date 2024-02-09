@@ -14,12 +14,18 @@ import {
 import Profile from './components/home/Profile.tsx'
 import Assets from './components/home/Assets.tsx'
 import Goal from     './components/home/Goal.tsx'
-import Calendar from './components/LeaveTracker/Calendar.js'
-import EmployeeSpecific from './components/LeaveTracker/EmployeeSpecific.tsx'
-import Issues from './components/LeaveTracker/Issues.tsx'
+import Calendar from './components/Engineering/Calendar.js'
+import EmployeeSpecific from './components/Engineering/EmployeeSpecific.tsx'
+import Manage from './components/Engineering/Manage.tsx'
 import Dashboard from './components/finance/Dashboard.tsx'
 import Issue from './components/finance/Issues.tsx'
 import LeaveTracker from './components/finance/LeaveTracker.tsx'
+import {
+  QueryClient,
+  QueryClientProvider,
+  
+} from '@tanstack/react-query'
+const queryClient = new QueryClient()
 
 // import Root from './routes/root';
 // import { Skeleton } from '@radix-ui/themes'
@@ -35,9 +41,9 @@ const router = createBrowserRouter([
     children:[{index:true,element:(<Navigate to={'profile'}/>)},{path:"profile",element:<Profile/>},{path:"assets",element:<Assets/>},{path:"goal",element:<Goal/>}]
   },
   {
-    path:"leave",
+    path:"engineering",
     element:<SkeletonPage type={2}/>,
-    children:[{index:true,element:<Navigate to ={'calendar'}/>},{path:'calendar',element:<Calendar/>},{path:"employee-specific",element:<EmployeeSpecific/>},{path:"issues",element:<Issues/>}]
+    children:[{index:true,element:<Navigate to ={'calendar'}/>},{path:'calendar',element:<Calendar/>},{path:"employee-specific",element:<EmployeeSpecific/>},{path:"manage",element:<Manage/>}]
   },
   {
     path:"finance",
@@ -51,8 +57,11 @@ const router = createBrowserRouter([
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+  <React.StrictMode>  <QueryClientProvider client={queryClient}>
+  
+
     <RouterProvider router={router} />
+    </QueryClientProvider>
     {/* <App /> */}
   </React.StrictMode>,
 )
