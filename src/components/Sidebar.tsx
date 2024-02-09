@@ -11,7 +11,7 @@ const navigationLinks: LinkProps[] = [
   { title: "Finance", href: "/finance" },
   { title: "HR", href: "/hr" },
   { title: "IT", href: "/kk" },
-  { title: "Engineering", href: "/leave" },
+  { title: "Engineering", href: "/engineering" },
   { title: "Logistics", href: "/jj" },
   { title: "Contact", href: "/bb" },
 ];

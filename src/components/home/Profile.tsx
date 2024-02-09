@@ -2,8 +2,17 @@ import React from "react";
 import ProfileImg from "../../images/Profile.jpg";
 import { Theme } from "@radix-ui/themes";
 import CarouselCard from "../../uicomponents/Carousel";
+interface Announcement {
+  title: string;
+  author: string;
+  date: string;
+  content: string;
+}
+interface EmployeeDetails {
+  [key: string]: string;
+}
 
-const announcements = [
+const announcements:Announcement[] = [
   {
     title: "LinkedIn updates",
     author: "Vinu Neelakandan",
@@ -32,7 +41,7 @@ const announcements = [
       "We have signed up with HDFC bank for the Salary Accounts as they have offered some benefits for our employees so docheck the email."
   },
 ];
-const employeeDetails = {
+const employeeDetails:EmployeeDetails = {
   "Employee ID": "11005",
   Name: "Lisa",
   Role: "Software Developer",
