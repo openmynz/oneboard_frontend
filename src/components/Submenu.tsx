@@ -13,8 +13,8 @@ interface TypeConfig {
 const typeConfig: TypeConfig = {
   1: [
     { title: "Profile", href: "profile" },
-    { title: "Assets Owned", href: "assets" },
-    { title: "Goal", href: "goal" },
+    // { title: "Assets Owned", href: "assets" },
+    // { title: "Goal", href: "goal" },
   ],
   2: [
     { title: "Calendar", href: "calendar" },

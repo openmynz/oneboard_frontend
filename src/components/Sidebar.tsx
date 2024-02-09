@@ -10,10 +10,10 @@ const navigationLinks: LinkProps[] = [
   { title: "Home", href: "/main" },
   { title: "Finance", href: "/finance" },
   { title: "HR", href: "/hr" },
-  { title: "IT", href: "/kk" },
+  // { title: "IT", href: "/kk" },
   { title: "Engineering", href: "/engineering" },
-  { title: "Logistics", href: "/jj" },
-  { title: "Contact", href: "/bb" },
+  // { title: "Logistics", href: "/jj" },
+  // { title: "Contact", href: "/bb" },
 ];
 
 const Sidebar: React.FC = () => {

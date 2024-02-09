@@ -1,22 +1,8 @@
-import {useQuery} from "@tanstack/react-query"
 
 import { Dialog,Flex,Button,Text,TextField,Theme ,Tabs} from '@radix-ui/themes';
-interface Account {
-  account_id: string;
-  account_name: string;
-  // Add other properties as needed
-}
+import Project from './Project';
 function Issues() {
-  const { isLoading, error, data } = useQuery({
-    queryKey: ['repoData'],
-    queryFn: () =>
-      fetch('http://192.168.3.55:8080/api/v1/clientaccounts/').then((res) =>
-        res.json(),
-      ),
-  })
- 
- console.log("hi")
-console.log(isLoading,error,data)
+
   return (
     <div>
     <Theme>
@@ -101,22 +87,7 @@ console.log(isLoading,error,data)
             </Dialog.Content>
           </Dialog.Root>
 
-      <table className="border border-gray-300">
-        <thead>
-          <tr>
-            <th className="border border-gray-300 p-2">Account ID</th>
-            <th className="border border-gray-300 p-2">Account Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data?(data.map((account: Account) => (
-            <tr key={account.account_id}>
-              <td className="border border-gray-300 p-2">{account.account_id}</td>
-              <td className="border border-gray-300 p-2">{account.account_name}</td>
-            </tr>
-          ))):(<p>Loading data</p>)}
-        </tbody>
-      </table>
+     <Project/>
     
         </Tabs.Content>
 
