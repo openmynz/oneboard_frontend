@@ -17,8 +17,8 @@ const typeConfig: TypeConfig = {
     { title: "Goal", href: "goal" },
   ],
   2: [
-    { title: "Calendar", href: "calendar" },
-    { title: "EmployeeSpecific", href: "employee-specific" },
+    // { title: "Calendar", href: "calendar" },
+    // { title: "EmployeeSpecific", href: "employee-specific" },
     { title: "Manage", href: "manage" },
   ],
   3: [

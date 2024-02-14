@@ -14,8 +14,8 @@ import {
 import Profile from './components/home/Profile.tsx'
 import Assets from './components/home/Assets.tsx'
 import Goal from     './components/home/Goal.tsx'
-import Calendar from './components/Engineering/Calendar.js'
-import EmployeeSpecific from './components/Engineering/EmployeeSpecific.tsx'
+// import Calendar from './components/Engineering/Calendar.js'
+// import EmployeeSpecific from './components/Engineering/EmployeeSpecific.tsx'
 import Manage from './components/Engineering/Manage.tsx'
 import Dashboard from './components/finance/Dashboard.tsx'
 import Issue from './components/finance/Issues.tsx'
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
   {
     path:"engineering",
     element:<SkeletonPage type={2}/>,
-    children:[{index:true,element:<Navigate to ={'calendar'}/>},{path:'calendar',element:<Calendar/>},{path:"employee-specific",element:<EmployeeSpecific/>},{path:"manage",element:<Manage/>}]
+    children:[{index:true,element:<Navigate to ={'manage'}/>},{path:"manage",element:<Manage/>}]
   },
   {
     path:"finance",
