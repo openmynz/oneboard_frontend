@@ -49,7 +49,6 @@ const employeeDetails:EmployeeDetails = {
   "Joining Date": "08:01:2024",
   "Reports To": "Chethan Alur",
   "Contact No": "6379896888",
-  "Employment Type": "Regular",
   Email: "lisa@openmynz.com",
   "Blood Group": "A Positive",
 };
@@ -105,7 +104,7 @@ const Profile: React.FC = () => {
         className=" relative right-0 col-span-2"
        
       >
-        <div id="display_picture" className="mt-6 ml-32">
+        <div id="display_picture" className="mt-3 ml-32">
           <img
             src={ProfileImg}
             alt="Profile"
@@ -116,12 +115,12 @@ const Profile: React.FC = () => {
         <div
             id="employee_detail_card"
             className="border-customGrey font-medium text-sm bg-white rounded-md overflow-hidden ml-8 mt-3  w-80"
-        
+            style={{height:"58vh"}}
           >
             <p className="bg-customBlue text-white text-center p-3 mb-3">
               General Profile
             </p>
-            <table className="table-auto border-separate border-spacing-2 p-6 ml-6 w-auto">
+            <table className="table-auto border-separate border-spacing-2 p-6 ml-6 w-auto" >
               <tbody>
                 {Object.entries(employeeDetails).map(([key, value]) => (
                   <tr key={key}>

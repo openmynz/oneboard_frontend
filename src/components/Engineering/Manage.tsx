@@ -63,7 +63,7 @@ function Issues() {
     mutationFn: deleteProject,
     onSuccess: () => {
       queryClient.invalidateQueries({ exact: true, queryKey: ["projectData"] });
-      queryClient.invalidateQueries({ exact: true, queryKey: ["projectData", Date.now().toString()] }); // Force re-fetch
+      
     },
   });
 const accountHandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -82,9 +82,10 @@ const accountHandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 
     const formData = new FormData(e.currentTarget); // Assuming correct form element
     const account_id = formData.get("account_id");
-    console.log(account_id, "acc_id");
+    
     if (!account_id) return;
-    deleteaccount(account_id);
+      deleteaccount(account_id.toString());
+
 
   };
   const projectHandleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
