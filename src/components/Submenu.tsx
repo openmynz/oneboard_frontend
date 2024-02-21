@@ -30,6 +30,10 @@ const typeConfig: TypeConfig = {
       title: "Leave Tracker",
       href: "leave-tracker",
     },
+    {
+      title:"Edit-Employee",
+      href: "edit-employee"
+    }
   ],
 };
 
