@@ -16,7 +16,7 @@ import {
   Theme,
   Tabs,
 } from "@radix-ui/themes";
-import AddUser from "./AddUser";
+// import AddUser from "./AddUser";
 
 interface Account {
   account_id: string;
@@ -113,14 +113,14 @@ console.log(accountData,projectData)
       <Theme>
         <Tabs.Root defaultValue="account">
           <Tabs.List>
-            <Tabs.Trigger value="user">Add User</Tabs.Trigger>
+            {/* <Tabs.Trigger value="user">Add User</Tabs.Trigger> */}
             <Tabs.Trigger value="account">Add Account</Tabs.Trigger>
             <Tabs.Trigger value="project">Add Project</Tabs.Trigger>  
             <Tabs.Trigger value="">Resource Mapping</Tabs.Trigger>
           </Tabs.List>
-    <Tabs.Content value="user">
+    {/* <Tabs.Content value="user">
 <AddUser/>
-    </Tabs.Content>
+    </Tabs.Content> */}
           <Tabs.Content
             value="account"
             style={{ marginLeft: "1rem", marginTop: "2rem" }}
@@ -188,7 +188,6 @@ console.log(accountData,projectData)
                       />
                     </label>
                   </Flex>
-
                   <Flex gap="3" mt="4" justify="end">
                     <Dialog.Close>
                       <Button variant="soft" color="gray">
@@ -204,33 +203,32 @@ console.log(accountData,projectData)
                 </form>
               </Dialog.Content>
             </Dialog.Root>
-
-            <table className="border border-gray-300">
-              <thead>
-                <tr>
-                  <th className="border border-gray-300 p-2">Account ID</th>
-                  <th className="border border-gray-300 p-2">Account Name</th>
-                </tr>
-              </thead>
-              <tbody>
-                {accountData ? (
-                  (accountData as Account[]).map((account: Account) => (
-                    <tr key={account.account_id}>
-                      <td className="border border-gray-300 p-2">
-                        {account.account_id}
-                      </td>
-                      <td className="border border-gray-300 p-2">
-                        {account.account_name}
-                      </td>
-                    </tr>
-                  ))
-                ) : (
-                  <p>Loading data</p>
-                )}
-              </tbody>
-            </table>
+          
+            <table className=" border border-gray-300 bg-white  p-5 shadow-md rounded-md overflow-hidden">
+      <thead>
+        <tr>
+          <th className="border border-gray-300 p-2 ">Account ID</th>
+          <th className="border border-gray-300 p-2">Account Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {accountData ? (
+          (accountData as Account[]).map((account: Account) => (
+            <tr key={account.account_id} className="">
+              <td className=" border-t border-l border-r border-b-0 border-gray-300 p-2">
+                {account.account_id}
+              </td>
+              <td className=" border-t border-l border-r border-b-0 border border-gray-300 p-2">
+                {account.account_name}
+              </td>
+            </tr>
+          ))
+        ) : (
+          <tr><td>Loading Data</td></tr>
+        )}
+      </tbody>
+    </table>
           </Tabs.Content>
-
           <Tabs.Content
             value="project"
             style={{ marginLeft: "1rem", marginTop: "2rem" }}
@@ -240,12 +238,11 @@ console.log(accountData,projectData)
                 <Dialog.Root>
                   <Dialog.Trigger>
                     <Button
-                      style={{ marginRight: "0.5rem", marginBottom: "0.5rem" }}
+                      style={{ marginRight: "0.25rem", marginBottom: "1rem" }}
                     >
                       Add
                     </Button>
                   </Dialog.Trigger>
-
                   <Dialog.Content style={{ maxWidth: 450 }}>
                     <Dialog.Title>Add Project</Dialog.Title>
                     <Dialog.Description size="2" mb="4">
@@ -339,7 +336,7 @@ console.log(accountData,projectData)
                 </Dialog.Root>
               </Theme>
             </div>
-            <table className="border border-gray-300">
+            <table className="border border-gray-300 bg-white  p-5 shadow-md rounded-md overflow-hidden">
               <thead>
                 <tr>
                   <th className="border border-gray-300 p-2">Project ID</th>
@@ -363,7 +360,7 @@ console.log(accountData,projectData)
                     </tr>
                   ))
                 ) : (
-                  <p>Loading data</p>
+                  <tr><td>Loading Data</td></tr>
                 )}
               </tbody>
             </table>

@@ -2,6 +2,7 @@ import React from "react";
 import ProfileImg from "../../images/Profile.jpg";
 import { Theme } from "@radix-ui/themes";
 import CarouselCard from "../../uicomponents/Carousel";
+
 interface Announcement {
   title: string;
   author: string;
@@ -53,6 +54,9 @@ const employeeDetails:EmployeeDetails = {
   "Blood Group": "A Positive",
 };
 const Profile: React.FC = () => {
+
+
+  // console.log(employeedata.profile_pt);
   return (
     <div className=" grid mt-1 grid-cols-8 bg-customGrey ">
       <div
@@ -62,7 +66,7 @@ const Profile: React.FC = () => {
       >
         <div
           id="announcements"
-          className="ml-10 overflow-y-scroll bg-white mt-1 flex-col space-y-1 p-1  "
+          className="ml-10 overflow-y-scroll bg-white mt-1 flex-col space-y-1 p-1 rounded-lg shadow-md overflow-hidden "
           style={{ height: "calc(100vh - 400px)" }}
         >
           {announcements.map((announcement, index) => (

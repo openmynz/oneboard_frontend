@@ -58,7 +58,7 @@ if(currentIndex>cards.length-3) {
           </div>
           <div className="flex items-center justify-between mt-4 relative  bottom-44 ">
             <button className="w-6 h-6 rounded-full bg-gray-300  relative right-4" onClick={handlePrev}>&lt;</button>
-            <button className="w-6 h-6 rounded-full bg-gray-300 relative left-10" onClick={handleNext}>&gt;</button>
+            <button className="w-6 h-6 rounded-full bg-gray-300 relative left-12" onClick={handleNext}>&gt;</button>
           </div>
         </div>
       </div>

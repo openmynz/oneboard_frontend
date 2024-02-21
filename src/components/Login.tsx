@@ -131,7 +131,7 @@ const Login: React.FC = () => {
               id="username"
               name="username"
               value={username}
-              className="ml-5 shadow appearance-none border rounded  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-full"
+              className="ml-5 shadow appearance-none border  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-full"
               placeholder="Username"
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -142,7 +142,7 @@ const Login: React.FC = () => {
               type="password"
               id="password"
               name="password"
-              className="ml-5 shadow appearance-none border rounded  py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline rounded-full"
+              className="ml-5 shadow appearance-none border  py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline rounded-full"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
