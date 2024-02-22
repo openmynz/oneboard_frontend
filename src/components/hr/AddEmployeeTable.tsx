@@ -6,7 +6,7 @@ interface Ldap{
   ldap_user_id: string
   employee_table_id: string;
   common_name: string;
-  email: string;
+  email_id: string;
   employee_id: string;
 }
 //this is the interface for the employee details field
@@ -22,6 +22,7 @@ interface employeeDetails{
   
 }
 const AddEmployeeTable: React.FC = () => {
+
   const queryClient = useQueryClient()     //this is used for mutations
  
   const {data:ldapdata} = useQuery({
@@ -31,7 +32,7 @@ const AddEmployeeTable: React.FC = () => {
   const { mutate: editemployee } = useMutation({
     mutationFn: editEmployee,
     onSuccess: () => {
-      queryClient.invalidateQueries({ exact: true, queryKey: ["employeeData"] });
+      queryClient.invalidateQueries({ exact: true, queryKey: ["ldapData"] });
     }
   });
   const handleEditEmployee = async (e: React.FormEvent<HTMLFormElement>,id:string) => {
@@ -94,9 +95,9 @@ const AddEmployeeTable: React.FC = () => {
         <Table.Body>
         {ldapdata?((ldapdata as Ldap[]).map((ldap:Ldap, index: number) =>(
           <Table.Row  key={ldap.ldap_user_id ?? index}>
-            <Table.Cell  style={{ width: '25%',textAlign:"center" }}>{ldap.employee_table_id}</Table.Cell>
+            <Table.Cell  style={{ width: '25%',textAlign:"center" }}>{ldap.employee_id}</Table.Cell>
             <Table.Cell style={{ width: '25%' }}>{ldap.common_name}</Table.Cell>
-            <Table.Cell style={{ width: '25%' }}>{ldap.email}</Table.Cell>
+            <Table.Cell style={{ width: '25%' }}>{ldap.email_id}</Table.Cell>
             <Table.Cell style={{ width: '25%' }}>
               <Dialog.Root>
                 <Dialog.Trigger>
